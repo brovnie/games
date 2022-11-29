@@ -1,7 +1,7 @@
 const Button = (props) => {
     return (
         <button>
-            {props.child}
+            {props.children}
         </button>
     )
 }
