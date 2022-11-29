@@ -1,4 +1,5 @@
 .sudoku {
   display: grid;
   grid-template-columns: repeat(9, 50px);
+  margin: 0 auto;
 }

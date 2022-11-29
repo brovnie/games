@@ -1,10 +1,12 @@
 import style from './Input.module.css';
-const Input = (props) => {
+import React from 'react';
+
+const Input = React.forwardRef((props, ref) => {
     return (
         <div className={style.wrapper}>
-            <input type="number" defaultValue={props.sudokuNumber || ""} />
+            <input ref={ref} {...props.input}/>
         </div>
     )    
-}
+});
 
 export default Input;
