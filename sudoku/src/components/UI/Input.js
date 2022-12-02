@@ -1,12 +1,12 @@
 import style from './Input.module.css';
 import React from 'react';
 
-const Input = React.forwardRef((props, ref) => {
+const Input = (props) => {
     return (
         <div className={style.wrapper}>
-            <input ref={ref} {...props.input}/>
+            <input {...props.input}/>
         </div>
     )    
-});
+};
 
 export default Input;
