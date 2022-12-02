@@ -1,6 +1,6 @@
 const Button = (props) => {
     return (
-        <button>
+        <button {...props.buttonSpec}>
             {props.children}
         </button>
     )
